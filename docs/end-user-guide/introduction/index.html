@@ -350,7 +350,13 @@ runtime:
 <p>Optionally, edit <code>supplemental-ui/partials/header-content.hbs</code>.</p>
 </li>
 <li>
-<p>To publish the build result for the pull requests, set the <code>NETLIFY_SITE_ID</code> <code>NETLIFY_AUTH_TOKEN</code> environment variables in the remote git repository configuration.</p>
+<p>Create a Netlify token <code>NETLIFY_AUTH_TOKEN</code>. See: <a href="https://app.netlify.com/user/applications/personal">Netlify - Create a new personal access token</a>. See: link: <a href="https://www.netlify.com/docs/cli/#obtain-a-token-in-the-netlify-ui">Obtaining a token with the UI</a>.</p>
+</li>
+<li>
+<p>To publish the build result for the pull requests, set the <code>NETLIFY_SITE_ID</code> environment variable in the remote git repository configuration (settings/secrets/actions). See: <a href="https://github.com/netlify/actions/tree/master/cli">Netlify GitHub Action CLI documentation</a></p>
+</li>
+<li>
+<p>Optionally, set <code>NETLIFY_SITE_ID</code> environment variable in the remote git repository configuration (settings/secrets/actions), to declare the API site ID. See: <a href="https://docs.netlify.com/cli/get-star">Link with an environment variable</a>.</p>
 </li>
 <li>
 <p>Create an initial commit containing the result and publish to the remote Git repository.</p>
