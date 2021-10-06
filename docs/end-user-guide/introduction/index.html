@@ -92,7 +92,9 @@
 </aside>
 <article class="doc">
 <h1 class="page">Introduction</h1>
-<h1 id="proc_starting-a-new-antora-project-compatible-with-modular-documentation_docs" class="sect0"><a class="anchor" href="#proc_starting-a-new-antora-project-compatible-with-modular-documentation_docs"></a>Starting a new Antora project compatible with Modular Documentation</h1>
+<div class="sect1">
+<h2 id="proc_starting-a-new-antora-project-compatible-with-modular-documentation_docs"><a class="anchor" href="#proc_starting-a-new-antora-project-compatible-with-modular-documentation_docs"></a>Starting a new Antora project compatible with Modular Documentation</h2>
+<div class="sectionbody">
 <div class="paragraph _abstract">
 <p>Starting a new Antora project compatible with Modular Documentation.</p>
 </div>
@@ -108,7 +110,19 @@
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Download the <a href="https://github.com/themr0c/antora-for-modular-docs/archive/refs/heads/main.zip">Antora for Modular Docs zip archive</a> and decompress it. The archive contains:</p>
+<p>Create a repository using <a href="https://github.com/themr0c/antora-for-modular-docs/generate">the Antora for Modular Docs repository template</a> and clone the repository to your local environment.</p>
+</li>
+<li>
+<p>Alternatively, download the <a href="https://github.com/themr0c/antora-for-modular-docs/archive/refs/heads/main.zip">Antora for Modular Docs zip archive</a>, decompress it, and use the content of this archive to start a new repository.</p>
+<div class="listingblock">
+<div class="content">
+<pre>$ cd antora-for-modular-docs
+$ git init</pre>
+</div>
+</div>
+</li>
+<li>
+<p>The new repository contains:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -130,15 +144,6 @@
 <p>Configuration for the <a href="https://github.com/wjdp/htmltest"><code>htmltest</code></a> link checker and other tools.</p>
 </li>
 </ul>
-</div>
-</li>
-<li>
-<p>Use the content of this archive to start a new repository.</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd antora-for-modular-docs
-$ git init</pre>
-</div>
 </div>
 </li>
 <li>
@@ -268,10 +273,6 @@ runtime:
 <td><i class="conum" data-value="2"></i><b>2</b></td>
 <td>Define project <code>start_page</code>.</td>
 </tr>
-<tr>
-<td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Define <code>edit_url</code></td>
-</tr>
 </table>
 </div>
 </li>
@@ -350,15 +351,6 @@ runtime:
 <p>Optionally, edit <code>supplemental-ui/partials/header-content.hbs</code>.</p>
 </li>
 <li>
-<p>Create a Netlify token <code>NETLIFY_AUTH_TOKEN</code>. See: <a href="https://app.netlify.com/user/applications/personal">Netlify - Create a new personal access token</a>. See: link: <a href="https://www.netlify.com/docs/cli/#obtain-a-token-in-the-netlify-ui">Obtaining a token with the UI</a>.</p>
-</li>
-<li>
-<p>To publish the build result for the pull requests, set the <code>NETLIFY_SITE_ID</code> environment variable in the remote git repository configuration (settings/secrets/actions). See: <a href="https://github.com/netlify/actions/tree/master/cli">Netlify GitHub Action CLI documentation</a></p>
-</li>
-<li>
-<p>Optionally, set <code>NETLIFY_SITE_ID</code> environment variable in the remote git repository configuration (settings/secrets/actions), to declare the API site ID. See: <a href="https://docs.netlify.com/cli/get-started/#link-with-an-environment-variable">Link with an environment variable</a>.</p>
-</li>
-<li>
 <p>Create an initial commit containing the result and publish to the remote Git repository.</p>
 <div class="listingblock">
 <div class="content">
@@ -370,6 +362,22 @@ $ git push</pre>
 </li>
 <li>
 <p>To publish the docs using GitHub pages, enable GitHub Pages in the remote repository configuration: choose <code>gh-pages</code> as source branch, and <code>root</code> as source directory.</p>
+</li>
+<li>
+<p>To publish the build result for the pull requests:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Create a Netlify token <code>NETLIFY_AUTH_TOKEN</code>. See: <a href="https://app.netlify.com/user/applications/personal">Netlify - Create a new personal access token</a>. See: link: <a href="https://www.netlify.com/docs/cli/#obtain-a-token-in-the-netlify-ui">Obtaining a token with the UI</a>.</p>
+</li>
+<li>
+<p>Get a Netlify site ID <code>NETLIFY_SITE_ID</code>. See: <a href="https://docs.netlify.com/cli/get-started/#link-with-an-environment-variable">Link with an environment variable</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Set the <code>NETLIFY_AUTH_TOKEN</code> and <code>NETLIFY_SITE_ID</code> environment variables in the remote git repository configuration (settings/secrets/actions). See: <a href="https://github.com/netlify/actions/tree/master/cli">Netlify GitHub Action CLI documentation</a></p>
 </li>
 </ol>
 </div>
@@ -405,6 +413,8 @@ $ git push</pre>
 <p>Use a consistent system for file names, IDs, and titles. For tips, see <em>Anchor Names and File Names</em> in <a href="https://github.com/redhat-documentation/modular-docs#modular-documentation-reference-guide">Modular Documentation Reference Guide</a>.</p>
 </li>
 </ul>
+</div>
+</div>
 </div>
 </article>
   </div>
