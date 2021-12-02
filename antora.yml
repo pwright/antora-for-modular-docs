@@ -15,7 +15,7 @@ name: docs
 title: Antora for Modular Documentation
 version: master # Define a Component Version with No Version
 display_version: main
-start_page: end-user-guide:introduction.adoc
+start_page: end-user-guide:assemblies/introduction.adoc
 nav:
   - modules/end-user-guide/nav.adoc
 asciidoc:

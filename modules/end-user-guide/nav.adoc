@@ -1,1 +1,1 @@
-* xref:introduction.adoc[]
+* xref:assemblies/introduction.adoc[]
