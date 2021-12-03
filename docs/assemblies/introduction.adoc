@@ -1,21 +1,33 @@
 // Metadata for Antora
-:navtitle: Introduction
+:navtitle: Intro
 :keywords: introduction, antora
 :page-aliases: old-introduction
 // End of metadata for Antora
 
 :parent-context-of-introduction: {context}
+include::../attributes.adoc[]
+
 
 [id="introduction_{context}"]
 = Introduction
 
 :context: introduction
 
-// [role="_abstract"]
+[role="_abstract"]
+Antora allows you organize and publish AsciiDoc content.
+{mod-docs-name} is a convention for creating and organizing AsciiDoc content.
+This project is an opinionated way to apply both techniques with simple AsciiDoc that renders directly from GitHub using AsciiDoc Live Preview.
 
-// == Prerequisites
+With {modtora-name} you get:
 
-include::../modules/proc_starting-a-new-antora-project.adoc[leveloffset=+1]
+* A {mod-docs-name} repo organized by assemblies and modules that you edit from the `/docs` directory.
+* An {antora-name} repo with playbooks, components, navigation, search, and more all preconfigured to 'just work' with your modular content
+* A simple method of using AsciiDoc `include` statements so that any GitHub or GitLab branch enables a full preview of assemblies from the hosted repo.
+
+
+*Background*: Any repo usually involves many instances, 
+
+include::../modules/starting-a-new-antora-project-compatible-with-modular-documentation.adoc[leveloffset=+1]
 
 // [role="_additional-resources"]
 // == Additional resources (or Next steps)

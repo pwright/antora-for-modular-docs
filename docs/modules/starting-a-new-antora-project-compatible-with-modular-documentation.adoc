@@ -1,6 +1,8 @@
 :_module-type: PROCEDURE
+:slugtitle: starting-a-new-antora-project-compatible-with-modular-documentation
+:navtitle: Starting
 
-[id="proc_starting-a-new-antora-project-compatible-with-modular-documentation_{context}"]
+[id="{slugtitle}_{context}"]
 = Starting a new Antora project compatible with Modular Documentation
 
 [role="_abstract"]

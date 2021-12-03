@@ -38,7 +38,6 @@ ui:
     snapshot: true
   supplemental_files: ./supplemental-ui
 urls:
-  html_extension_style: indexify
   redirect_facility: static
 runtime:
   cache_dir: ./.cache/antora

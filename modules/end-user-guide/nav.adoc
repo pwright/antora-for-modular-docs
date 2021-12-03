@@ -1,1 +1,1 @@
-* xref:assemblies/introduction.adoc[]
+../../docs/README.adoc

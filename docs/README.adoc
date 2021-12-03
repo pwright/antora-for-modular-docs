@@ -1,0 +1,3 @@
+TOC:
+
+* xref:assemblies/introduction.adoc[]

@@ -1,0 +1,3 @@
+:mod-docs-name: Modular documentation
+:antora-name: Antora
+:modtora-name: an Antora mod-docs repo
