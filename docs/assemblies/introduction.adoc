@@ -25,7 +25,7 @@ With {modtora-name} you get:
 * A simple method of using AsciiDoc `include` statements so that any GitHub or GitLab branch enables a full preview of assemblies from the hosted repo.
 
 
-*Background*: Any repo usually involves many instances, 
+*Background*: Any repo usually involves many instances, upstream hosted on GitHub, forks and local repos on your PC.
 
 include::../modules/starting-a-new-antora-project-compatible-with-modular-documentation.adoc[leveloffset=+1]
 
