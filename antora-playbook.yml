@@ -26,7 +26,7 @@ content:
     - url: ./
       branches:
         - main
-      edit_url: "https://github.com/themr0c/antora-for-modular-docs/edit/main/{path}"
+      edit_url: ~
 output:
   destinations:
     - provider: fs

@@ -20,6 +20,7 @@ site:
   start_page: docs::index.adoc
   robots: allow
 content:
+  edit_url: ~ 
   sources:
     - url: ./
       branches: HEAD
